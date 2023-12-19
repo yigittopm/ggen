@@ -16,45 +16,45 @@ This CLI Tool basically provides password generation from simple to difficult.
 Clone the project
 
 ```bash
-  git clone https://github.com/yigittopm/ggen
+git clone https://github.com/yigittopm/ggen
 ```
 
 Go to the project directory
 
 ```bash
-  cd ggen
+cd ggen
 ```
 
 Build
 
 ```bash
-  go build .
+go build .
 ```
 
 Start app
 
 ```bash
-  ./ggen generate
+./ggen generate
 ```
 
 ## Example
 
 Contains all characters and length is 8
 ```bash
-  ./ggen generate
+./ggen generate
 ```
 
 ```
-   Generating password:
-   ]2R@Br_g
+Generating password:
+]2R@Br_g
 ```
 
 Contains only numbers and length is 10
 ```bash
-  ./ggen generate -n 10
+./ggen generate -n 10
 ```
 
 ```
-   Generating password:
-   98166691
+Generating password:
+98166691
 ```
