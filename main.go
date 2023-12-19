@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 Mert Yigittop <yigittopm@hotmail.com>
+Copyright © 2023 Mert Yiğittop <yigittopm@hotmail.com>
 */
 package main
 
