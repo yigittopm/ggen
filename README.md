@@ -51,7 +51,7 @@ Generating password:
 
 Contains only numbers and length is 10
 ```bash
-./ggen generate -n 10
+./ggen generate -n -l 10
 ```
 
 ```

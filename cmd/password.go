@@ -15,7 +15,7 @@ var (
 	numbers    bool
 	characters bool
 	special    bool
-	lenght     int
+	length     int
 )
 
 var (
@@ -49,7 +49,7 @@ func generatePassword(cmd *cobra.Command, args []string) {
 		charset += specialList
 	}
 
-	password := make([]byte, lenght)
+	password := make([]byte, length)
 	for i := range password {
 		password[i] = charset[rand.Intn(len(charset))]
 	}
@@ -64,7 +64,7 @@ func init() {
 	passwordCmd.Flags().BoolVarP(&numbers, "numbers", "n", false, "Password contain numbers")
 	passwordCmd.Flags().BoolVarP(&characters, "characters", "c", false, "Password contain characters")
 	passwordCmd.Flags().BoolVarP(&special, "special", "s", false, "Password contain special chars")
-	passwordCmd.Flags().IntVarP(&lenght, "lenght", "l", 8, "Password length")
+	passwordCmd.Flags().IntVarP(&length, "length", "l", 8, "Password length")
 
 	rootCmd.AddCommand(passwordCmd)
 
